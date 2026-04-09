@@ -255,7 +255,7 @@ $$
 Ax = \sum_{i=1}^n \alpha_i Av_i.
 $$
 
-对于前 $r$ 项，$Av_i=\sigma_i u_i$；对于后面的零奇异值项，有 $Av_i=0$。所以
+对于前 $r$ 项， $Av_i=\sigma_i u_i$ ；对于后面的零奇异值项，有 $Av_i=0$。所以
 
 $$
 Ax = \sum_{i=1}^r \alpha_i \sigma_i u_i.
@@ -404,7 +404,7 @@ $$
 A_k = \sum_{i=1}^{k} \sigma_i u_i v_i^T.
 $$
 
-这就是 rank-$k$ 截断 SVD。
+这就是 $\text{rank}(X)$ 截断 SVD。
 
 它为什么合理？因为误差正好就是剩下那些层：
 
