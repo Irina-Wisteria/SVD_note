@@ -8,7 +8,7 @@ $$
 
 这条公式时，很多人的感觉都差不多：看着像模像样，但不知道它到底在说什么。
 
-真正理解 SVD 的方式，不是死记 $U$、$\Sigma$、$V^T$ 这几个名字，而是先抓住它最核心的一层意思：
+真正理解 SVD 的方式，不是死记  $U$ 、 $\Sigma$ 、 $V^T$  这几个名字，而是先抓住它最核心的一层意思：
 
 > 一个复杂的线性映射，总能被拆成三件更容易理解的事：先换坐标，再沿主轴缩放，最后再换一次坐标。
 
@@ -499,7 +499,7 @@ Xapprox = U[:, :r] @ np.diag(S[:r]) @ VT[:r, :]
 
 前`r`个奇异值重建的图片
 
-![SVD image compression](./svd_assets/svd_image_compression.png)
+![SVD image compression](./svd_assets/diff_r.png)
 
 这里很容易看出一个典型规律：
 
