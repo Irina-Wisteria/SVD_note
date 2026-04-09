@@ -211,8 +211,8 @@ $$
 
 而 $v_i$ 本来就是一组标准正交向量，所以：
 
-1. 当 $i\neq j$ 时，$v_i^T v_j = 0$，于是 $u_i^T u_j = 0$。
-2. 当 $i=j$ 时，$v_i^T v_i = 1$，于是 $u_i^T u_i = 1$。
+1. 当 $i\neq j$ 时， $v_i^T v_j = 0$ ，于是 $u_i^T u_j = 0$。
+2. 当 $i=j$ 时， $v_i^T v_i = 1$ ，于是 $u_i^T u_i = 1$。
 
 因此，$\{u_i\}$ 也是一组标准正交向量。
 
@@ -497,7 +497,7 @@ Xapprox = U[:, :r] @ np.diag(S[:r]) @ VT[:r, :]
 
 黑白版本：
 
-![Black and white version](./svd_assets/Black and white version.png)
+![Black and white version](./svd_assets/Black_and_white_version.png)
 
 前`r`个奇异值重建的图片：
 
