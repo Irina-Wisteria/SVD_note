@@ -218,7 +218,7 @@ $$
 
 ### 第五步：把矩阵重新拼起来
 
-设 $r=\operatorname{rank}(A)$，也就是非零奇异值的个数。把前 $r$ 个左右奇异向量拼成矩阵
+设 $r=\text{rank}(A)$，也就是非零奇异值的个数。把前 $r$ 个左右奇异向量拼成矩阵
 
 $$
 U_r=[u_1,\dots,u_r],\qquad
@@ -228,7 +228,7 @@ $$
 再定义对角矩阵
 
 $$
-\Sigma_r = \operatorname{diag}(\sigma_1,\dots,\sigma_r).
+\Sigma_r = \text{diag}(\sigma_1,\dots,\sigma_r).
 $$
 
 由于每一列都满足
@@ -367,7 +367,7 @@ $$
 所以
 
 $$
-\operatorname{rank}(X) \le 2.
+\text{rank}(X) \le 2.
 $$
 
 另一方面，每一列都可以写成
@@ -379,7 +379,7 @@ $$
 因此列空间由 $\mathbf 1$ 和 $y$ 张成。由于脚本里的 $y$ 不是常向量，所以 $\mathbf 1$ 和 $y$ 线性无关，于是
 
 $$
-\operatorname{rank}(X)=2.
+\text{rank}(X)=2.
 $$
 
 这不是“数值上看起来接近秩 2”，而是“构造上精确秩 2”。
@@ -491,13 +491,15 @@ Xapprox = U[:, :r] @ np.diag(S[:r]) @ VT[:r, :]
 2. 只保留最重要的前几层。
 3. 用较少的结构，重构出主要视觉内容。
 
-原始图片和黑白版本：
+原始图片：
 
 ![origin](./svd_assets/origin.png)
 
+黑白版本：
+
 ![Black and white version](./svd_assets/Black and white version.png)
 
-前`r`个奇异值重建的图片
+前`r`个奇异值重建的图片：
 
 ![SVD image compression](./svd_assets/diff_r.png)
 
